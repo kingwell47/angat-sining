@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
+import angatLogo from "../assets/angat.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,12 @@ function Navbar() {
     <nav className="bg-white shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to={`/`} className="text-xl font-semibold text-gray-700">
-            Welcome to the Philippines
+          <Link to={`/`} className="flex items-center space-x-2">
+            <img src={angatLogo} alt="Logo" className="w-8 h-8" />{" "}
+            {/* Add your logo */}
+            <span className="text-xl font-semibold text-gray-700">
+              Angat Sining
+            </span>
           </Link>
           <div className="lg:hidden">
             <button

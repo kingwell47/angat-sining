@@ -79,8 +79,8 @@ function Footer() {
               UP Open University <br />
               Los Baños, Laguna <br />
               Philippines, 4031 <br />
-              Email: inquiries@upou.edu.ph <br />
-              Phone: (+6349) 536-6001 to 06 local 710
+              Email: placeholder@email.com <br />
+              Phone: (+63) 555-5555 loc 555
             </p>
           </div>
         </div>
