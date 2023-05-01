@@ -9,6 +9,22 @@ import elnidoImage from "../assets/elnido.jpg";
 
 import { Link } from "react-router-dom";
 
+const placeImages = [
+  {
+    imgSrc: coronImage,
+    altText: "Coron, MIMAROPA",
+  },
+  {
+    imgSrc: cebuImage,
+    altText: "Cebu, Region VII",
+  },
+
+  {
+    imgSrc: elnidoImage,
+    altText: "El Nido, MIMAROPA",
+  },
+];
+
 function Home() {
   return (
     <>
@@ -27,27 +43,18 @@ function Home() {
               swipeable
               className="h-full"
             >
-              <div className="h-full">
-                <img
-                  src={coronImage}
-                  alt="Coron, MIMAROPA, Philippines"
-                  className="object-cover object-center min-w-full min-h-full"
-                />
-              </div>
-              <div className="h-full">
-                <img
-                  src={cebuImage}
-                  alt="Cebu, Philippines"
-                  className="object-cover object-center min-w-full min-h-full"
-                />
-              </div>
-              <div className="h-full">
-                <img
-                  src={elnidoImage}
-                  alt="El Nido, Philippines"
-                  className="object-cover object-center min-w-full min-h-full"
-                />
-              </div>
+              {placeImages.map((placeImg, index) => (
+                <div className="h-full relative" key={index}>
+                  <img
+                    src={placeImg.imgSrc}
+                    alt={placeImg.altText}
+                    className="object-cover object-center min-w-full min-h-full"
+                  />
+                  <div className="carousel-caption absolute bottom-0 left-0 p-4 text-white drop-shadow-lg shadow-black">
+                    {placeImg.altText}
+                  </div>
+                </div>
+              ))}
             </Carousel>
             <div className="md:col-span-3">
               <h2 className="text-3xl font-semibold mb-8">Project Overview</h2>
@@ -70,12 +77,11 @@ function Home() {
               </p>
               <p className="mb-8">
                 Our project consists of a feasibility study, marketing and
-                branding strategy, partnership program, cultural events and
-                initiatives, and training program. By working closely with local
-                stakeholders and partners, we will develop a comprehensive
-                approach to cultural tourism that is both sustainable and
-                inclusive, ensuring that the benefits are felt by all members of
-                the community.
+                branding strategy, partnership program, and cultural events and
+                initiatives. By working closely with local stakeholders and
+                partners, we will develop a comprehensive approach to cultural
+                tourism that is both sustainable and inclusive, ensuring that
+                the benefits are felt by all members of the community.
               </p>
               <div className="text-center md:text-left">
                 <Link to="/feasibility">

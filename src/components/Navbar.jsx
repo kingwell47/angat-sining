@@ -55,7 +55,7 @@ function Navbar() {
             } lg:block lg:flex lg:items-center w-full lg:w-auto`}
           >
             <ul className="mt-4 lg:mt-0 lg:flex lg:space-x-12" role="list">
-              <li>
+              <li className="hover:border-b-[3px]">
                 <Link
                   to={`/feasibility`}
                   className="block text-gray-600 hover:text-gray-900"
@@ -63,7 +63,7 @@ function Navbar() {
                   Feasibility Study
                 </Link>
               </li>
-              <li>
+              <li className="hover:border-b-[3px]">
                 <Link
                   to={`/marketing`}
                   className="block text-gray-600 hover:text-gray-900"
@@ -71,7 +71,7 @@ function Navbar() {
                   Marketing and Branding Strategy
                 </Link>
               </li>
-              <li>
+              <li className="hover:border-b-[3px]">
                 <Link
                   to={`/partnership`}
                   className="block text-gray-600 hover:text-gray-900"
@@ -79,7 +79,7 @@ function Navbar() {
                   Partnership Program
                 </Link>
               </li>
-              <li>
+              <li className="hover:border-b-[3px]">
                 <Link
                   to={`/events`}
                   className="block text-gray-600 hover:text-gray-900"
@@ -87,7 +87,7 @@ function Navbar() {
                   Cultural Events and Initiatives
                 </Link>
               </li>
-              <li>
+              <li className="hover:border-b-[3px]">
                 <Link
                   to={`/resources`}
                   className="block text-gray-600 hover:text-gray-900"
