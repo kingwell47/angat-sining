@@ -39,26 +39,33 @@ function Events() {
           </h1>
         </div>
       </section>
-      <Carousel
-        infiniteLoop
-        showThumbs={true}
-        showStatus={false}
-        showIndicators={false}
-        interval={3000}
-        transitionTime={500}
-        swipeable
-        className="h-full"
-      >
-        {calendarImages.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image.img}
-              alt={image.month}
-              className="object-cover object-center w-full h-auto cursor-pointer"
-            />
-          </div>
-        ))}
-      </Carousel>
+      <section className="container mx-auto px-4 py-12">
+        <p className="text-lg text-center mb-8">
+          A series of cultural events and initiatives that showcase the unique
+          offerings of Philippine cities and {"towns'"} cultural institutions,
+          including exhibitions, performances, and workshops.
+        </p>
+        <Carousel
+          infiniteLoop
+          showThumbs={true}
+          showStatus={false}
+          showIndicators={false}
+          interval={3000}
+          transitionTime={500}
+          swipeable
+          className="h-full"
+        >
+          {calendarImages.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image.img}
+                alt={image.month}
+                className="object-cover object-center w-full h-auto cursor-pointer"
+              />
+            </div>
+          ))}
+        </Carousel>
+      </section>
     </MainLayout>
   );
 }

@@ -1,12 +1,11 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import flagImage from "../assets/flag.jpg";
 
 function Hero() {
   return (
-    <div className="relative">
+    <section className="relative">
       <img
         src={flagImage}
         alt="The flag of the Philippines"
@@ -17,7 +16,7 @@ function Hero() {
           Celebrating Philippine Culture Through Tourism
         </h1>
       </div>
-    </div>
+    </section>
   );
 }
 
