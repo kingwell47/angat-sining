@@ -3,25 +3,29 @@ import Hero from "../components/Hero";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import coronImage from "../assets/coron.jpg";
+import manilaImage from "../assets/manila.jpg";
 import cebuImage from "../assets/cebu.jpg";
-import elnidoImage from "../assets/elnido.jpg";
+import panagbengaImage from "../assets/panagbenga.jpg";
+import iloiloImage from "../assets/iloilo.jpg";
 
 import { Link } from "react-router-dom";
 
 const placeImages = [
   {
-    imgSrc: coronImage,
-    altText: "Coron, MIMAROPA",
-  },
-  {
     imgSrc: cebuImage,
     altText: "Cebu, Region VII",
   },
-
   {
-    imgSrc: elnidoImage,
-    altText: "El Nido, MIMAROPA",
+    imgSrc: manilaImage,
+    altText: "Manila, NCR",
+  },
+  {
+    imgSrc: panagbengaImage,
+    altText: "Baguio, CAR",
+  },
+  {
+    imgSrc: iloiloImage,
+    altText: "Iloilo City, Western Visayas",
   },
 ];
 

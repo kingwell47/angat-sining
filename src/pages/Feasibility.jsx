@@ -82,7 +82,6 @@ function Feasibility() {
               href="https://drive.google.com/file/d/1xZqydhT5TZ7NbFdZ0leUMDezqySZQ1IA/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              download
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300"
             >
               Download PDF Report

@@ -71,6 +71,17 @@ function Footer() {
                   Resources
                 </Link>
               </li>
+              <li>
+                <br />
+                <a
+                  href="https://www.pexels.com/"
+                  className="text-gray-400 hover:text-gray-100"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Images from Pexels.com
+                </a>
+              </li>
             </ul>
           </div>
           <div className="w-full md:w-1/3">
