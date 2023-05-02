@@ -58,7 +58,7 @@ function Events() {
           interval={3000}
           transitionTime={500}
           swipeable
-          className="h-full"
+          className="h-full border-4 mb-4"
         >
           {calendarImages.map((image, index) => (
             <div key={index}>

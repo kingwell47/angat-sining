@@ -1,12 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLayout from "../layout/MainLayout";
-import PlaceholderSection from "../components/PlaceholderSection";
 
 import bunutanImage from "../assets/places/bunutan.jpg";
 
 import { Link } from "react-router-dom";
 
+import artdayImage from "../assets/marketing/artdayph.png";
+import mabuhayImage from "../assets/marketing/mabuhay.png";
+import luzonFestival from "../assets/marketing/luzon-festival.png";
+import visayasFestival from "../assets/marketing/visayas-festival.png";
+import mindanaoFestival from "../assets/marketing/mindanao-festival.png";
+import theatherDance from "../assets/marketing/theater-dance.png";
+
 function Marketing() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    {
+      img: luzonFestival,
+      text: "Panagbenga Festival Poster",
+    },
+    {
+      img: visayasFestival,
+      text: "Masskara Festival Poster",
+    },
+    {
+      img: mindanaoFestival,
+      text: "Kadayawan Festival Poster",
+    },
+    {
+      img: mabuhayImage,
+      text: "Mabuhay Food Fair Poster",
+    },
+    {
+      img: theatherDance,
+      text: "Angat Sining Poster",
+    },
+    {
+      img: artdayImage,
+      text: "Philippine Art Day",
+    },
+  ];
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <MainLayout>
       <section className="relative">
@@ -21,7 +64,60 @@ function Marketing() {
           </h1>
         </div>
       </section>
-      <PlaceholderSection />
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="cursor-pointer"
+              onClick={() => openModal(image.img)}
+            >
+              <img
+                src={image.img}
+                alt={image.text}
+                className="object-cover object-center w-full h-auto"
+              />
+              <p className="mt-2 text-center">{image.text}</p>
+            </div>
+          ))}
+        </div>
+
+        {selectedImage && (
+          <div
+            className="fixed z-10 inset-0 overflow-y-auto"
+            aria-labelledby="modal-title"
+            role="dialog"
+            aria-modal="true"
+          >
+            <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+              <div
+                className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                aria-hidden="true"
+                onClick={closeModal}
+              ></div>
+              <span
+                className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                aria-hidden="true"
+              >
+                &#8203;
+              </span>
+              <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <img
+                  src={selectedImage}
+                  alt="Modal Image"
+                  className="object-cover object-center w-full h-auto"
+                />
+                <button
+                  className="absolute top-0 right-0 p-2 text-gray-900 hover:text-gray-600"
+                  onClick={closeModal}
+                >
+                  &#10005;
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
       <div className="text-center mt-8">
         <Link to="/partnership">
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300">

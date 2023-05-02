@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #fbeaeb;
+}
+
 .carousel-caption {
   position: absolute;
   width: 100%;
