@@ -1,19 +1,21 @@
 import React from "react";
 import MainLayout from "../layout/MainLayout";
 
-import sanfelipeImage from "../assets/sanfelipe.jpg";
+import sanfelipeImage from "../assets/places/sanfelipe.jpg";
 import graphImage from "../assets/Graph.png";
+
+import { Link } from "react-router-dom";
 
 const pageData = [
   {
     title: "Market Analysis",
-    content: `The Philippines has one of the most diversified and dynamic cultural scenes in the world. According to the Department of Tourism, in 2019, the Philippines recorded a Total of 8.2 million international tourist arrivals, with a 15.24% increase from the previous year. Cultural tourism is a vital component of the Philippine tourism sector, visitors want to experience the country's distinct culture, which includes music, dancing, cuisine, arts & crafts, and festivals.`,
+    content: `The Philippines has one of the most diversified and dynamic cultural scenes in the world. According to the Department of Tourism, in 2019, the Philippines recorded a total of 8.2 million international tourist arrivals, with a 15.24% increase from the previous year. Cultural tourism is a vital component of the Philippine tourism sector, visitors want to experience the country's distinct culture, which includes music, dancing, cuisine, arts & crafts, and festivals.`,
     source:
       "https://beta.tourism.gov.ph/news_and_updates/2019-international-arrivals-exceed-target-with-8-26-million-visitors-to-the-philippines/",
   },
   {
     title: "Visitor Demographics",
-    content: `Neighboring countries in Southeast Asia, such as South Korea, China, Taiwan, and Japan accounts for the majority of the visitors to the Philippines. However, Western countries, particularly the United States, Australia, and some European countries, are showing increasing interest as their percentages grow.`,
+    content: `Neighboring countries, such as the ASEAN region, South Korea, China, Taiwan, India, and Japan account for the majority of the visitors to the Philippines. However, countries like the United States, Canada, United Kingdom, Australia, and some others in Europe, also showed increasing interests as their percentages grew. While the COVID-19 pandemic has severely hurt the tourism industry of the country, the DOT targets to have 4.8 million tourists in 2023 as the government recovers from the pandemic.`,
     source:
       "https://www.bsp.gov.ph/Media_And_Research/Publications/EN22-02.pdf",
   },
@@ -86,6 +88,13 @@ function Feasibility() {
             >
               Download PDF Report
             </a>
+          </div>
+          <div className="text-center mt-8">
+            <Link to="/marketing">
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300">
+                Go to Marketing and Branding
+              </button>
+            </Link>
           </div>
         </div>
       </section>

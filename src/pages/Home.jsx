@@ -3,10 +3,10 @@ import Hero from "../components/Hero";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import manilaImage from "../assets/manila.jpg";
-import cebuImage from "../assets/cebu.jpg";
-import panagbengaImage from "../assets/panagbenga.jpg";
-import iloiloImage from "../assets/iloilo.jpg";
+import manilaImage from "../assets/places/manila.jpg";
+import cebuImage from "../assets//places/cebu.jpg";
+import panagbengaImage from "../assets//places/panagbenga.jpg";
+import iloiloImage from "../assets//places/iloilo.jpg";
 
 import { Link } from "react-router-dom";
 

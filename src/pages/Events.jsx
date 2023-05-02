@@ -3,7 +3,8 @@ import MainLayout from "../layout/MainLayout";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import cebuImage from "../assets/cebu-event.jpg";
+import cebuImage from "../assets/places/cebu-event.jpg";
+import frontImage from "../assets/calendar/frontpage.png";
 import calendar1 from "../assets/calendar/1.png";
 import calendar2 from "../assets/calendar/2.png";
 import calendar3 from "../assets/calendar/3.png";
@@ -12,9 +13,11 @@ import calendar5 from "../assets/calendar/5.png";
 import calendar6 from "../assets/calendar/6.png";
 import calendar7 from "../assets/calendar/7.png";
 import calendar8 from "../assets/calendar/8.png";
+import eventsImage from "../assets/calendar/events.png";
 
 function Events() {
   const calendarImages = [
+    { img: frontImage, month: "Front Image" },
     { img: calendar1, month: "May" },
     { img: calendar2, month: "June" },
     { img: calendar3, month: "July" },
@@ -41,9 +44,11 @@ function Events() {
       </section>
       <section className="container mx-auto px-4 py-12">
         <p className="text-lg text-center mb-8">
-          A series of cultural events and initiatives that showcase the unique
-          offerings of Philippine cities and {"towns'"} cultural institutions,
-          including exhibitions, performances, and workshops.
+          A series of cultural events and initiatives designed to showcase the
+          unique offerings of Philippine cities and {"towns'"} cultural
+          institutions. This vibrant celebration of arts and heritage will
+          feature a diverse range of exhibitions, performances, and workshops
+          that reflect the rich tapestry of Philippine culture.
         </p>
         <Carousel
           infiniteLoop
@@ -65,6 +70,13 @@ function Events() {
             </div>
           ))}
         </Carousel>
+        <div>
+          <img
+            src={eventsImage}
+            alt="Calendar for Cultural Events"
+            className="object-cover object-center w-full h-auto cursor-pointer"
+          />
+        </div>
       </section>
     </MainLayout>
   );

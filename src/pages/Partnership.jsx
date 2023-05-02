@@ -1,9 +1,10 @@
 import React from "react";
 import MainLayout from "../layout/MainLayout";
-import PlaceholderSection from "../components/PlaceholderSection";
 
-import iloiloImage from "../assets/iloilo-church.jpg";
-import cagayanImage from "../assets/cagayan-de-oro.jpg";
+import iloiloImage from "../assets/places/iloilo-church.jpg";
+import cagayanImage from "../assets/places/cagayan-de-oro.jpg";
+
+import { Link } from "react-router-dom";
 
 function Partnership() {
   const partnersData = [
@@ -187,6 +188,13 @@ function Partnership() {
                 </li>
               ))}
             </ul>
+            <div className="text-center mt-8">
+              <Link to="/events">
+                <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300">
+                  Go to Cultural Events and Initiatives
+                </button>
+              </Link>
+            </div>
           </div>
           <div className="h-full relative">
             <img

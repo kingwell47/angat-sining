@@ -1,6 +1,8 @@
 import React from "react";
 import MainLayout from "../layout/MainLayout";
 
+import banaueImage from "../assets/places/banaue2.jpg";
+
 const resourcesList = [
   {
     title: "Department of Tourism Philippines (DOT)",
@@ -43,8 +45,19 @@ const resourcesList = [
 function Resources() {
   return (
     <MainLayout>
+      <section className="relative">
+        <img
+          src={banaueImage}
+          alt="Banaue, CAR"
+          className="w-full h-96 object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <h1 className="text-4xl lg:text-5xl font-bold text-white px-4 py-2">
+            Resources
+          </h1>
+        </div>
+      </section>
       <section className="container mx-auto px-4 py-12">
-        <h2 className="text-3xl font-semibold text-center mb-8">Resources</h2>
         <ul className="space-y-4 text-lg">
           {resourcesList.map((res, index) => (
             <li key={index}>
