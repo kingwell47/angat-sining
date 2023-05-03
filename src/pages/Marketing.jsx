@@ -64,7 +64,37 @@ function Marketing() {
           </h1>
         </div>
       </section>
-      <div className="container mx-auto px-4 py-12">
+      <section className="container mx-auto px-4 py-12">
+        <p className="text-lg mb-8">
+          A marketing and branding strategy that leverages digital and offline
+          channels to promote cultural tourism in Philippine cities and towns,
+          including social media campaigns, influencer partnerships, and
+          targeted advertising.
+        </p>
+        <h3 className="text-2xl font-semibold mb-4">Objectives</h3>
+        <ul className="list-disc list-inside pl-5 mb-8">
+          <li>
+            Establish brand awareness through social media campaigns, local
+            business sponsorships, influencer partnerships, and targeted
+            advertising.
+          </li>
+          <li>
+            Boost website traffic through social media engagement, ad campaigns,
+            content marketing such as pubmats or infographics, and Search Engine
+            Optimization (SEO).
+          </li>
+        </ul>
+        <h3 className="text-2xl font-semibold mb-4">People</h3>
+        <p className="text-lg mb-8">
+          The target audience is men and women between the ages of 25 to 35
+          years old who live in urban areas where most art galleries, museums,
+          and cultural institutions are located. These people may have an
+          interest in traveling, arts, local craftsmanship and traditions,
+          exhibits, cultural events, and other similar activities.
+        </p>
+        <h3 className="text-2xl font-semibold mb-4">Place</h3>
+        <p className="text-lg mb-8">Social media</p>
+        <h3 className="text-2xl font-semibold mb-4">Promotion</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((image, index) => (
             <div
@@ -117,7 +147,7 @@ function Marketing() {
             </div>
           </div>
         )}
-      </div>
+      </section>
       <div className="text-center mt-8">
         <Link to="/partnership">
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300">
