@@ -203,7 +203,7 @@ function Partnership() {
               className="w-full h-full object-cover object-center"
             />
             <div className="absolute bottom-0 left-0 bg-black text-white w-full bg-opacity-70 text-sm py-2 px-4">
-              Cagayan De Oro, Northern Mindanao
+              Camiguin, Northern Mindanao
             </div>
           </div>
         </div>
