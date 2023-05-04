@@ -58,7 +58,7 @@ function Navbar() {
               <li>
                 <Link
                   to={`/feasibility`}
-                  className="block text-gray-600 hover:text-gray-900 py-1 px-1 transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
+                  className="block text-gray-600 py-1 px-1 transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
                 >
                   Feasibility Study
                 </Link>
@@ -66,7 +66,7 @@ function Navbar() {
               <li>
                 <Link
                   to={`/marketing`}
-                  className="block text-gray-600 hover:text-gray-900 py-1 px-1 transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
+                  className="block text-gray-600 py-1 px-1 transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
                 >
                   Marketing and Branding Strategy
                 </Link>
@@ -74,7 +74,7 @@ function Navbar() {
               <li>
                 <Link
                   to={`/partnership`}
-                  className="block text-gray-600 hover:text-gray-900 py-1 px-1 transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
+                  className="block text-gray-600 py-1 px-1 transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
                 >
                   Partnership Program
                 </Link>
@@ -82,7 +82,7 @@ function Navbar() {
               <li>
                 <Link
                   to={`/events`}
-                  className="block text-gray-600 hover:text-gray-900 py-1 px-1 transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
+                  className="block text-gray-600 py-1 px-1 transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
                 >
                   Cultural Events and Initiatives
                 </Link>

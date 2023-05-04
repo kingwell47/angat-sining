@@ -33,7 +33,7 @@ function Home() {
   return (
     <>
       <Hero />
-      <section className="py-12">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
             <Carousel
@@ -61,7 +61,7 @@ function Home() {
               ))}
             </Carousel>
             <div className="md:col-span-3">
-              <h2 className="text-3xl font-semibold mb-8">Project Overview</h2>
+              <h2 className="text-4xl font-semibold mb-10">Project Overview</h2>
               <p className="mb-8">
                 Our initiative aims to leverage the rich cultural heritage of
                 Philippine cities and towns to drive economic growth and create
