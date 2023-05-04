@@ -90,8 +90,6 @@ function Footer() {
               UP Open University <br />
               Los Baños, Laguna <br />
               Philippines, 4031 <br />
-              Email: placeholder@email.com <br />
-              Phone: (+63) 555-5555 loc 555
             </p>
           </div>
         </div>
