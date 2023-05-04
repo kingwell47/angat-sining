@@ -84,14 +84,14 @@ function Feasibility() {
               href="https://drive.google.com/file/d/1xZqydhT5TZ7NbFdZ0leUMDezqySZQ1IA/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded"
             >
               Download PDF Report
             </a>
           </div>
           <div className="text-center mt-8">
             <Link to="/marketing">
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300">
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded">
                 Go to Marketing and Branding
               </button>
             </Link>

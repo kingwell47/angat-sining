@@ -150,7 +150,7 @@ function Marketing() {
       </section>
       <div className="text-center mt-8">
         <Link to="/partnership">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded">
             Go to Partnership Program
           </button>
         </Link>

@@ -74,7 +74,7 @@ function Events() {
           <img
             src={eventsImage}
             alt="Calendar for Cultural Events"
-            className="object-cover object-center w-full h-auto cursor-pointer"
+            className="object-cover object-center w-full h-auto"
           />
         </div>
       </section>

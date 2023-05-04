@@ -48,13 +48,13 @@ function Home() {
               className="h-full"
             >
               {placeImages.map((placeImg, index) => (
-                <div className="h-full relative" key={index}>
+                <div className="h-full relative group" key={index}>
                   <img
                     src={placeImg.imgSrc}
                     alt={placeImg.altText}
-                    className="object-cover object-center min-w-full min-h-full"
+                    className="object-cover object-center min-w-full min-h-full transition duration-300 transform group-hover:scale-105"
                   />
-                  <div className="carousel-caption absolute bottom-0 left-0 p-4 text-white drop-shadow-lg shadow-black">
+                  <div className="carousel-caption absolute bottom-0 left-0 p-4 text-white drop-shadow-lg shadow-black bg-gradient-to-r from-transparent via-black group-hover:via-black">
                     {placeImg.altText}
                   </div>
                 </div>
@@ -89,7 +89,7 @@ function Home() {
               </p>
               <div className="text-center md:text-left">
                 <Link to="/feasibility">
-                  <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300">
+                  <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-md transition duration-300 hover:text-black hover:bg-gradient-to-r from-blue-300 via-purple-300 to-red-300 rounded">
                     Learn More
                   </button>
                 </Link>
